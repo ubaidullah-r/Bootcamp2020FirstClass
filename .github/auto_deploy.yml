@@ -35,6 +35,6 @@ jobs:
       - name: Installing surge
         run:  npm Install --global surge
       - name: deploying using surge
-        run: surge ./ well-made-fireman.surge.sh --token $ {{ secrets.SURGE_TOKEN}}
+        run: surge ./ well-made-fireman.surge.sh --token ${{ secrets.SURGE_TOKEN}}
     
       
